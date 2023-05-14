@@ -87,13 +87,3 @@ async def retorno(pelicula: str):
     
     return {'pelicula':pelicula, 'inversion':inversion, 'ganacia':ganancia,'retorno':retorno, 'año':anio}
 
-
-
-
-
-
-
-
-@app.get("/about")
-async def about():
-    return 'Estamos en el about del servicio web'
