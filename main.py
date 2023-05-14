@@ -49,7 +49,7 @@ async def peliculas_pais(pais: str):
     return {'País': pais, 'Cantidad de Peliculas': cantidad}
     
     
-'''
+
 @app.get("/productora/{productora}")
 
     #Ingresas la productora, retornando la ganancia total y la cantidad de peliculas que produjeron
@@ -74,7 +74,7 @@ async def peliculas_productora(productora: str):
             return {'Productora':productora, 'Ganancia_total':ganancia, 'Cantidad':cantidad}
         else:
             return 'Productora no válida'
-'''
+
 @app.get("/retorno/{pelicula}")
 async def retorno(pelicula: str):
     # Ingresas la pelicula, retornando la inversion, la ganancia, el retorno y el año en el que se lanzo
