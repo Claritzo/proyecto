@@ -42,14 +42,16 @@ async def peliculas_franquicia(franquicia: str):
 @app.get("/pais/{pais}")
 async def peliculas_pais(pais: str):
     '''
-        Ingresas el pais, retornando la cantidad de peliculas producidas en el mismo'
+        Ingresas el pais, retornando la cantidad de peliculas producidas en el mismo
     '''
     pais = pais.lower()
     cantidad = movies[movies['production_countries'].apply(lambda x:pais in [p.lower() for p in x])]['title'].count()
     return {'País': pais, 'Cantidad de Peliculas': cantidad}
     
     
+'''
 @app.get("/productora/{productora}")
+
     '''
         Ingresas la productora, retornando la ganancia total y la cantidad de peliculas que produjeron
     '''
@@ -73,7 +75,7 @@ async def peliculas_productora(productora: str):
             return {'Productora':productora, 'Ganancia_total':ganancia, 'Cantidad':cantidad}
         else:
             return 'Productora no válida'
-
+'''
 @app.get("/retorno/{pelicula}")
 async def retorno(pelicula: str):
     '''
