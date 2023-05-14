@@ -74,10 +74,10 @@ async def peliculas_productora(productora: str):
             return {'Productora':productora, 'Ganancia_total':ganancia, 'Cantidad':cantidad}
         else:
             return 'Productora no válida'
-
+'''
 @app.get("/retorno/{pelicula}")
 async def retorno(pelicula: str):
-     Ingresas la pelicula, retornando la inversion, la ganancia, el retorno y el año en el que se lanzo
+    # Ingresas la pelicula, retornando la inversion, la ganancia, el retorno y el año en el que se lanzo
     
     mv = movies[movies['title'] == pelicula]
     inversion = mv['budget'].sum()
@@ -87,4 +87,3 @@ async def retorno(pelicula: str):
     
     return {'pelicula':pelicula, 'inversion':inversion, 'ganacia':ganancia,'retorno':retorno, 'año':anio}
 
-'''
