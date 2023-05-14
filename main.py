@@ -75,7 +75,7 @@ async def peliculas_productora(productora: str):
             return {'Productora':productora, 'Ganancia_total':ganancia, 'Cantidad':cantidad}
         else:
             return 'Productora no válida'
-'''
+
 @app.get("/retorno/{pelicula}")
 async def retorno(pelicula: str):
     '''
@@ -89,3 +89,4 @@ async def retorno(pelicula: str):
     
     return {'pelicula':pelicula, 'inversion':inversion, 'ganacia':ganancia,'retorno':retorno, 'año':anio}
 
+'''
