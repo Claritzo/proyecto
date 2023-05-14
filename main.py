@@ -51,19 +51,18 @@ async def peliculas_pais(pais: str):
     
 
 @app.get("/productora/{productora}")
-
-    #Ingresas la productora, retornando la ganancia total y la cantidad de peliculas que produjeron
+async def peliculas_productora(productora: str):
+ #Ingresas la productora, retornando la ganancia total y la cantidad de peliculas que produjeron
     
-    unique_company = set()
+        unique_company = set()
 
 # itera sobre cada fila en la columna de las compañias
-    for row in movies['production_companies']:
-        unique_company.update(set(row))
+        for row in movies['production_companies']:
+            unique_company.update(set(row))
 
     # convierte nuevamente el conjunto en una lista
-    unique_company = [company.lower() for company in list(unique_company)]
+        unique_company = [company.lower() for company in list(unique_company)]
 
-async def peliculas_productora(productora: str):
         productora_low = productora.lower()
         if productora_low in unique_company:
             # crear mascara
