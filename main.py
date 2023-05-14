@@ -52,9 +52,8 @@ async def peliculas_pais(pais: str):
 '''
 @app.get("/productora/{productora}")
 
-    '''
-        Ingresas la productora, retornando la ganancia total y la cantidad de peliculas que produjeron
-    '''
+    #Ingresas la productora, retornando la ganancia total y la cantidad de peliculas que produjeron
+    
     unique_company = set()
 
 # itera sobre cada fila en la columna de las compañias
