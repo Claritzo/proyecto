@@ -10,6 +10,6 @@ las API´s solicitadas por el cliente y el sistema de recomendación de Machine 
 En el archivo EDA, esta detallado el análisis exploratorio que se hizo según nuestro equipo de Analistas de Datos.
 
 # Conclusiones y recomendaciones
-El siguiente link https://claritzo-proyecto-main-52pqa8.streamlit.app/ es la página donde esta alojado nuetro sistema de consultas y recomendaciones ya procesado, depurado y listo para ser consumido.
+El siguiente link https://claritzo-proyecto-main-52pqa8.streamlit.app/ es la página donde esta alojado nuestro sistema de consultas y recomendaciones ya procesado, depurado y listo para ser consumido.
 
 Este link https://drive.google.com/file/d/1H660Axw3jPrvQUcjFtjWvlcNDpKxkhI-/view?usp=share_link nos lleva a un video con  una breve explicación y demostración del uso y funcionamiento del sistema.
